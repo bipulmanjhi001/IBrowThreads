@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="@dimen/_43sdp"
+    android:layout_height="@dimen/_43sdp"
+    android:padding="@dimen/_2sdp">
+
+    <TextView
+        android:id="@+id/tvStamp"
+        android:layout_width="@dimen/_43sdp"
+        android:layout_height="@dimen/_43sdp"
+        android:background="@drawable/custom_card_select"
+        android:gravity="center"
+        android:text=""
+        android:textSize="@dimen/_13sdp"/>
+</RelativeLayout>

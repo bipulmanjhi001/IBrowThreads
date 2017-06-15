@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="orem.gill.ibrowthreads.activities.HomeActivity"
+    tools:ignore="MissingPrefix"
+    android:animateLayoutChanges="true">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            app:contentInsetStart="0dp"
+            android:animateLayoutChanges="true">
+
+            <RelativeLayout
+                android:id="@+id/rlOther"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone">
+                <TextView
+                    android:id="@+id/tvTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/_30sdp"
+                    fontPath="ZapfinoExtra.otf"/>
+            </RelativeLayout>
+            <LinearLayout
+                android:id="@+id/llHome"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:padding="@dimen/_5sdp"
+                android:gravity="center_vertical"
+                android:visibility="gone">
+                <ImageView
+                    android:id="@+id/ivFB"
+                    android:layout_width="@dimen/_35sdp"
+                    android:layout_height="@dimen/_35sdp"
+                    android:src="@drawable/ic_fb_icon"/>
+                <ImageView
+                    android:id="@+id/ivTwitter"
+                    android:layout_width="@dimen/_35sdp"
+                    android:layout_height="@dimen/_35sdp"
+                    android:src="@drawable/ic_twitter_icon"
+                    android:layout_marginLeft="@dimen/_5sdp"/>
+                <ImageView
+                    android:id="@+id/ivInsta"
+                    android:layout_width="@dimen/_35sdp"
+                    android:layout_height="@dimen/_35sdp"
+                    android:src="@drawable/ic_insta_icon"
+                    android:layout_marginLeft="@dimen/_5sdp"/>
+                <ImageView
+                    android:id="@+id/ivWeb"
+                    android:layout_width="@dimen/_35sdp"
+                    android:layout_height="@dimen/_35sdp"
+                    android:src="@drawable/ic_website_icon"
+                    android:layout_marginLeft="@dimen/_5sdp"/>
+                <TextView
+                    android:id="@+id/tvLoyalityCard"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_35sdp"
+                    android:background="@drawable/custom_golden_border"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:textColor="@color/colorAccent"
+                    android:text="@string/loyality_card"
+                    android:gravity="center"
+                    android:textSize="@dimen/_15sdp"/>
+            </LinearLayout>
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <include layout="@layout/content_home" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginBottom="@dimen/_60sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        app:srcCompat="@drawable/ic_location_white"
+        android:background="@drawable/custom_golden_border"/>
+
+</android.support.design.widget.CoordinatorLayout>

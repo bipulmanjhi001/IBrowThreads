@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "597681787476",
+    "firebase_url": "https://ibrow-threads-app.firebaseio.com",
+    "project_id": "ibrow-threads-app",
+    "storage_bucket": "ibrow-threads-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:597681787476:android:14ea7a98c8e6d606",
+        "android_client_info": {
+          "package_name": "orem.gill.ibrowthreads"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "597681787476-5uftu6ala9ck2s2r12rli32m7d81ll81.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyABgBtZLSML6tJjmM2--RJW2EbcC_THhQQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
